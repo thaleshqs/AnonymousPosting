@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 messages = []
 filtered_messages = []
-max_messages = 10
+max_messages = 15
 previous_search = None
 
 def get_next_id():
@@ -14,7 +14,6 @@ def get_next_id():
 def create_app():
     app = Flask(__name__)
     
-
     @app.route('/policies')
     def politics():
         return render_template('policies.html')
